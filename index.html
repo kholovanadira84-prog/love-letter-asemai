@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для тебя ❤️</title>
+  <meta name="description" content="Маленькое письмо для самого дорогого человека.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: "Montserrat", sans-serif;
+      color: #3a1f2b;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.8) 0 2px, transparent 3px),
+        radial-gradient(circle at 85% 70%, rgba(255,255,255,.7) 0 2px, transparent 3px),
+        linear-gradient(135deg, #f8dce5, #fff4ed 48%, #f2d5e1);
+      overflow-x: hidden;
+    }
+    .hearts { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .heart {
+      position: absolute;
+      bottom: -60px;
+      font-size: 20px;
+      opacity: .45;
+      animation: rise linear infinite;
+    }
+    @keyframes rise {
+      from { transform: translateY(0) rotate(0deg); opacity: 0; }
+      15% { opacity: .5; }
+      to { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
+    }
+    .wrap {
+      position: relative; z-index: 1;
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto; padding: 56px 0 72px;
+    }
+    .hero { text-align: center; margin-bottom: 26px; }
+    .eyebrow {
+      text-transform: uppercase; letter-spacing: .25em;
+      font-size: 11px; color: #a45b76; font-weight: 600;
+    }
+    h1 {
+      margin: 12px 0 8px;
+      font: 600 clamp(44px, 9vw, 78px)/.95 "Cormorant Garamond", serif;
+      color: #6f2947;
+    }
+    .sub { margin: 0; font-size: 14px; color: #7b5362; }
+    .card {
+      position: relative;
+      max-width: 720px; margin: 0 auto;
+      padding: clamp(28px, 6vw, 58px);
+      border: 1px solid rgba(145,74,101,.16);
+      border-radius: 28px;
+      background: rgba(255,250,248,.82);
+      box-shadow: 0 25px 80px rgba(111,41,71,.15);
+      backdrop-filter: blur(10px);
+    }
+    .corner { position: absolute; font-size: 24px; opacity: .55; }
+    .c1 { top: 18px; left: 22px; }
+    .c2 { bottom: 18px; right: 22px; transform: rotate(180deg); }
+    .letter {
+      font: 500 clamp(22px, 3.2vw, 29px)/1.48 "Cormorant Garamond", serif;
+      color: #412530;
+    }
+    .letter p { margin: 0 0 20px; }
+    .signature { margin-top: 32px; text-align: right; color: #7d3d59; }
+    .signature strong { display:block; font: 600 31px "Cormorant Garamond", serif; }
+    .qr-section {
+      margin: 32px auto 0; max-width: 720px;
+      text-align: center; padding: 26px;
+      border-radius: 24px; background: rgba(255,255,255,.62);
+    }
+    .qr-section h2 { font: 600 30px "Cormorant Garamond", serif; margin: 0 0 7px; }
+    .qr-section p { font-size: 12px; color: #7b5362; margin: 0 0 18px; }
+    #qrcode {
+      width: 210px; height: 210px; margin: 0 auto 16px;
+      padding: 10px; background: white; border-radius: 16px;
+      display:flex; align-items:center; justify-content:center;
+    }
+    #qrcode img { max-width:100%; max-height:100%; }
+    .url {
+      width: 100%; padding: 11px 14px; border: 1px solid #e2bccb;
+      border-radius: 12px; background: rgba(255,255,255,.8);
+      color:#7a4b5d; text-align:center; font-size:11px;
+    }
+    .hint { margin-top: 12px !important; }
+    footer { text-align:center; margin-top: 25px; font-size:11px; color:#986b7d; }
+    @media (max-width: 560px) {
+      .wrap { padding-top: 38px; }
+      .card { border-radius: 22px; }
+      .letter { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">для самой особенной — Асемай</div>
+      <h1>Открой, когда будешь готова, Асемай ❤️</h1>
+      <p class="sub">Некоторые чувства слишком красивые, чтобы помещаться в обычном сообщении.</p>
+    </header>
+
+    <article class="card">
+      <div class="corner c1">♡</div>
+      <div class="corner c2">♡</div>
+      <div class="letter">
+        <p>Асемай, моя дорогая,</p>
+        <p>если ты сейчас читаешь это письмо, значит, ты подарила мне ещё один маленький момент счастья.</p>
+        <p>Я долго думал, как сказать тебе то, что чувствую. И понял простую вещь: рядом с тобой обычные дни становятся особенными, а самые простые моменты хочется запоминать навсегда.</p>
+        <p>Мне нравится твоя улыбка, твой голос, твой характер и даже те мелочи, которые ты сама в себе можешь не замечать. Но больше всего мне нравится то, каким я становлюсь рядом с тобой.</p>
+        <p>Спасибо тебе за то, что ты есть. За каждый разговор, каждый взгляд, каждую улыбку и за то тепло, которое ты приносишь в мою жизнь.</p>
+        <p>Я не обещаю идеальной истории. Но обещаю быть искренним, беречь наши моменты и снова и снова выбирать тебя.</p>
+        <p>И если после этого письма ты улыбнулась хотя бы на секунду — значит, всё было не зря. ❤️</p>
+      </div>
+      <div class="signature">
+        С любовью,<br>
+        <strong>твой человек ❤️</strong>
+      </div>
+    </article>
+
+    <section class="qr-section">
+      <h2>Сделай ей маленький сюрприз</h2>
+      <p>После публикации сайта этот QR-код будет вести прямо на письмо.</p>
+      <div id="qrcode"></div>
+      <input class="url" id="url" readonly>
+      <p class="hint">Скопируй ссылку сайта и преврати её в QR-код — например, для открытки, подарка или записки.</p>
+    </section>
+
+    <footer>Сделано с любовью ✦</footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 18; i++) {
+      const el = document.createElement('span');
+      el.className = 'heart';
+      el.textContent = ['♡','♥','✦'][i % 3];
+      el.style.left = (Math.random()*100) + '%';
+      el.style.animationDuration = (8 + Math.random()*10) + 's';
+      el.style.animationDelay = (-Math.random()*15) + 's';
+      el.style.fontSize = (14 + Math.random()*18) + 'px';
+      hearts.appendChild(el);
+    }
+
+    const currentUrl = window.location.href.split('#')[0];
+    document.getElementById('url').value = currentUrl;
+
+    function makeQR() {
+      const box = document.getElementById('qrcode');
+      if (typeof QRCode === 'undefined') {
+        box.textContent = 'QR-код появится после загрузки страницы.';
+        return;
+      }
+      new QRCode(box, {
+        text: currentUrl,
+        width: 190,
+        height: 190,
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    }
+    makeQR();
+  </script>
+</body>
+</html>
